@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "customColorPicker.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController {
+    UILabel *lblColor;
+    customColorPicker *colorPicker;
+}
 
 @end
 

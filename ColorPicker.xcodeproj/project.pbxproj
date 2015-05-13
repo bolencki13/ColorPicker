@@ -14,6 +14,9 @@
 		40F185941AF041CF005901A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F185931AF041CF005901A6 /* Images.xcassets */; };
 		40F185971AF041CF005901A6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F185951AF041CF005901A6 /* LaunchScreen.xib */; };
 		40F185A31AF041CF005901A6 /* ColorPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F185A21AF041CF005901A6 /* ColorPickerTests.m */; };
+		40F185AE1AF041F9005901A6 /* customColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F185AD1AF041F9005901A6 /* customColorPicker.m */; };
+		40F185B01AF04999005901A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F185AF1AF04999005901A6 /* UIKit.framework */; };
+		40F185B21AF05188005901A6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F185B11AF05188005901A6 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		40F1859C1AF041CF005901A6 /* ColorPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F185A11AF041CF005901A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40F185A21AF041CF005901A6 /* ColorPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorPickerTests.m; sourceTree = "<group>"; };
+		40F185AC1AF041F9005901A6 /* customColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customColorPicker.h; sourceTree = "<group>"; };
+		40F185AD1AF041F9005901A6 /* customColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customColorPicker.m; sourceTree = "<group>"; };
+		40F185AF1AF04999005901A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		40F185B11AF05188005901A6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F185B21AF05188005901A6 /* QuartzCore.framework in Frameworks */,
+				40F185B01AF04999005901A6 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,10 @@
 		40F1857A1AF041CF005901A6 = {
 			isa = PBXGroup;
 			children = (
+				40F185B11AF05188005901A6 /* QuartzCore.framework */,
+				40F185AF1AF04999005901A6 /* UIKit.framework */,
+				40F185AC1AF041F9005901A6 /* customColorPicker.h */,
+				40F185AD1AF041F9005901A6 /* customColorPicker.m */,
 				40F185851AF041CF005901A6 /* ColorPicker */,
 				40F1859F1AF041CF005901A6 /* ColorPickerTests */,
 				40F185841AF041CF005901A6 /* Products */,
@@ -168,6 +181,7 @@
 				TargetAttributes = {
 					40F185821AF041CF005901A6 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 9UKYMVL752;
 					};
 					40F1859B1AF041CF005901A6 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -221,6 +235,7 @@
 			files = (
 				40F1858F1AF041CF005901A6 /* ViewController.m in Sources */,
 				40F1858C1AF041CF005901A6 /* AppDelegate.m in Sources */,
+				40F185AE1AF041F9005901A6 /* customColorPicker.m in Sources */,
 				40F185891AF041CF005901A6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,7 +362,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ColorPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -357,7 +374,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ColorPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
