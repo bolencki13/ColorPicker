@@ -1,4 +1,4 @@
-#Create a simple color picker for iOS.
+#Impliment a simple color picker for iOS.
 
 ######To impliment add the files into your project.
 ######Also add the quart QuartzCore.framework & UIKit.framework
